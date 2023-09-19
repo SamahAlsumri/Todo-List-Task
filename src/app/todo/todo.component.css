@@ -1,0 +1,13 @@
+.container{
+    padding: 20px;
+    background-color: rgb(194, 226, 227);
+    height: 800px;
+    width: 500px;
+    border-radius: 20px;
+    border: 10px;
+  
+}
+section{
+    background-color:rgba(244, 223, 93, 0.362);
+    justify-content: baseline;
+}

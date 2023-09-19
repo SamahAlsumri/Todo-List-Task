@@ -1,0 +1,18 @@
+<section>
+<div class="container">
+    <h1>To-Do List</h1><br><br>
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" [(ngModel)]="newTask" placeholder="Add a new task">
+        <div class="input-group-append">
+            <button class="btn btn-primary" (click)="addTask()">Add</button>
+        </div>
+    </div><br><br>
+    <ul class="list-group" >
+        <li class="list-group-item" *ngFor="let task of tasks; let i = index">
+            {{ task }}
+            <button class="btn btn-danger btn-sm float-right"  (click)="removeTask(i)">Delete</button>
+        </li>
+        
+    </ul>
+</div>
+</section>
